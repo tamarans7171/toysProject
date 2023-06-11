@@ -55,7 +55,7 @@ router.get("/search", async (req, res) => {
 });
 
 
-router.get("/category", async (req, res) => {
+router.get("/category/:catname", async (req, res) => {
   let perPage = 10;
   let page = req.query.page || 1;
 
